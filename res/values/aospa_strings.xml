@@ -9,59 +9,5 @@
     <string name="ignore_window_secure_title">Ignore window secure flags</string>
     <string name="ignore_window_secure_summary">Remove screenshot and screenrecord limits for all apps. This can be convenient in some cases but may lead to privacy leaks.</string>
 
-    <!-- Game Space -->
-    <string name="game_space_title">Game Space</string>
-    <string name="game_space_summary">Enhance your gaming experience</string>
 
-    <!-- Black theme -->
-    <string name="system_black_theme_title">Use Black theme</string>
-    <string name="system_black_theme_summary">Force black background colors</string>
-
-    <!-- Display settings screen, increased touch sensitivity settings title [CHAR LIMIT=30] -->
-    <string name="touch_sensitivity_title">Increase touch sensitivity</string>
-    <!-- Display settings screen, increased touch sensitivity settings summary [CHAR LIMIT=NONE] -->
-    <string name="touch_sensitivity_summary">Improves touch when using screen protectors</string>
-
-    <!-- Display settings screen, high touch polling rate settings title [CHAR LIMIT=30] -->
-    <string name="touch_polling_title">High touch polling rate</string>
-    <!-- Display settings screen, high touch polling rate settings summary [CHAR LIMIT=NONE] -->
-    <string name="touch_polling_summary">Increase touchscreen polling rate to improve responsiveness</string>
-
-    <!-- Three-fingers-swipe to screenshot -->
-    <string name="three_finger_gesture">Swipe to screenshot</string>
-    <string name="three_finger_gesture_summary">Swipe down with three fingers to take a screenshot</string>
-
-    <!-- Status bar - Network Traffic -->
-    <string name="network_traffic_settings_title">Network traffic monitor</string>
-    <string name="network_traffic_settings_summary">Show current network traffic levels in the status bar</string>
-    <string name="network_traffic_mode_title">Display mode</string>
-    <string name="network_traffic_mode_disable">Disabled</string>
-    <string name="network_traffic_mode_up">Upload only</string>
-    <string name="network_traffic_mode_down">Download only</string>
-    <string name="network_traffic_mode_all">Upload and download</string>
-    <string name="network_traffic_autohide">Auto hide</string>
-    <string name="network_traffic_autohide_summary">Hide the traffic monitor when there is no activity</string>
-    <string name="network_traffic_units_title">Traffic measurement units</string>
-    <string name="network_traffic_units_kilobits">Kilobits per second (kb/s)</string>
-    <string name="network_traffic_units_megabits">Megabits per second (Mb/s)</string>
-    <string name="network_traffic_units_kilobytes">Kilobytes per second (kB/s)</string>
-    <string name="network_traffic_units_megabytes">Megabytes per second (MB/s)</string>
-    <string name="network_traffic_units_auto">Automatic (kB/s or MB/s)</string>
-
-    <!-- Per-app volume -->
-    <string name="app_volume">App volume</string>
-    <string name="app_volume_title">Per-app volume control</string>
-    <string name="app_volume_summary">Show per-app volume button into volume dialog</string>
-
-    <!-- Title for the Bluetooth device details preference that chooses which audio codec a paired device is played with. [CHAR LIMIT=40] -->
-    <string name="bluetooth_details_audio_codec_title">Audio codec</string>
-    <!-- Summary shown when the audio codec of a paired device cannot be read or chosen. [CHAR LIMIT=40] -->
-    <string name="bluetooth_details_audio_codec_unavailable">Not available</string>
-    <!-- Double-tap to sleep -->
-    <string name="status_bar_double_tap_to_sleep_title">Double-tap to sleep</string>
-    <string name="status_bar_double_tap_to_sleep_summary">Double-tap the status bar or lock screen to turn off the screen</string>
-
-    <!-- Smart Screen-On Notification Muting -->
-    <string name="notification_screen_on_mute_title">Mute notifications while screen is on</string>
-    <string name="notification_screen_on_mute_summary">Silence notification tones and vibrations while actively using the device</string>
 </resources>
