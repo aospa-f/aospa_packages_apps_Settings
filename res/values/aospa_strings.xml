@@ -20,4 +20,8 @@
     <!-- Back gesture arrow -->
     <string name="back_gesture_arrow_title">Back gesture arrow</string>
     <string name="back_gesture_arrow_summary">Show the arrow indicator when using back gestures</string>
+
+    <!-- Status bar burn-in protection -->
+    <string name="status_bar_burn_in_protection_title">Status bar burn-in protection</string>
+    <string name="status_bar_burn_in_protection_summary">Periodically shift status bar icons to prevent OLED burn-in</string>
 </resources>
