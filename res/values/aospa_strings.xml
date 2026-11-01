@@ -70,6 +70,9 @@
     <!-- Per-app volume -->
     <string name="app_volume_title">Per-app volume control</string>
     <string name="app_volume_summary">Show per-app volume button into volume dialog</string>
+    <string name="app_volume">Per-app volume</string>
+    <string name="bluetooth_details_audio_codec_title">Bluetooth audio codec</string>
+    <string name="bluetooth_details_audio_codec_unavailable">Codec not available</string>
 
     <!-- Three-finger screenshot -->
     <string name="three_finger_gesture">Swipe to screenshot</string>
