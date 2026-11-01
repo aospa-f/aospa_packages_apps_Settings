@@ -16,4 +16,8 @@
     <!-- Multi Audio Focus -->
     <string name="multi_audio_focus_title">Multi audio focus</string>
     <string name="multi_audio_focus_summary">Allow multiple apps to play audio simultaneously</string>
+
+    <!-- Back gesture arrow -->
+    <string name="back_gesture_arrow_title">Back gesture arrow</string>
+    <string name="back_gesture_arrow_summary">Show the arrow indicator when using back gestures</string>
 </resources>
