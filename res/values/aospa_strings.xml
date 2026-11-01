@@ -57,4 +57,11 @@
     <string name="bluetooth_details_audio_codec_title">Audio codec</string>
     <!-- Summary shown when the audio codec of a paired device cannot be read or chosen. [CHAR LIMIT=40] -->
     <string name="bluetooth_details_audio_codec_unavailable">Not available</string>
+    <!-- Double-tap to sleep -->
+    <string name="status_bar_double_tap_to_sleep_title">Double-tap to sleep</string>
+    <string name="status_bar_double_tap_to_sleep_summary">Double-tap the status bar or lock screen to turn off the screen</string>
+
+    <!-- Smart Screen-On Notification Muting -->
+    <string name="notification_screen_on_mute_title">Mute notifications while screen is on</string>
+    <string name="notification_screen_on_mute_summary">Silence notification tones and vibrations while actively using the device</string>
 </resources>
