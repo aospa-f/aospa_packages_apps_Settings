@@ -67,10 +67,6 @@
     <string name="notification_screen_on_mute_title">Mute notifications while screen is on</string>
     <string name="notification_screen_on_mute_summary">Mute notification sound and vibration when the screen is on and unlocked</string>
 
-    <!-- Compact heads-up -->
-    <string name="compact_heads_up_notifications_enabled_title">Compact heads-up</string>
-    <string name="compact_heads_up_notifications_enabled_summary">Display notifications in compact size</string>
-
     <!-- Per-app volume -->
     <string name="app_volume_title">Per-app volume control</string>
     <string name="app_volume_summary">Show per-app volume button into volume dialog</string>
