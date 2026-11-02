@@ -64,6 +64,13 @@
         settings:controller="com.android.settings.network.AirplaneModePreferenceController"
         settings:userRestriction="no_airplane_mode"/>
 
+    <co.aospa.framework.preference.SecureSettingSwitchPreference
+        android:key="idle_radio_timeout"
+        android:title="@string/idle_radio_timeout_title"
+        android:summary="@string/idle_radio_timeout_summary"
+        android:order="0"
+        android:defaultValue="false"/>
+
     <com.android.settingslib.RestrictedPreference
         android:fragment="com.android.settings.network.tether.TetherSettings"
         android:key="tether_settings"

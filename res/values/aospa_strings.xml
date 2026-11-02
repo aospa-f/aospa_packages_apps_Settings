@@ -78,4 +78,12 @@
     <string name="three_finger_gesture">Swipe to screenshot</string>
     <string name="three_finger_gesture_summary">Swipe down with three fingers to take a screenshot</string>
 
+    <!-- Screenshot detection -->
+    <string name="screenshot_detection_title">Screenshot detection</string>
+    <string name="screenshot_detection_summary">Allow apps to know when you take a screenshot. Turn off to prevent apps from detecting screenshots.</string>
+
+    <!-- Idle radio timeout -->
+    <string name="idle_radio_timeout_title">Turn off Wi-Fi and Bluetooth when idle</string>
+    <string name="idle_radio_timeout_summary">Automatically turn off Wi-Fi and Bluetooth after 5 minutes without a connection</string>
+
 </resources>

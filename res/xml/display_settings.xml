@@ -267,5 +267,19 @@
             android:title="@string/status_bar_burn_in_protection_title"
             android:summary="@string/status_bar_burn_in_protection_summary"
             android:defaultValue="true" />
+
+        <!-- Window ignore secure, based on LibXZR's feature -->
+        <co.aospa.framework.preference.SecureSettingSwitchPreference
+            android:key="window_ignore_secure"
+            android:title="@string/ignore_window_secure_title"
+            android:summary="@string/ignore_window_secure_summary"
+            android:defaultValue="false" />
+
+        <!-- Screenshot detection -->
+        <co.aospa.framework.preference.SecureSettingSwitchPreference
+            android:key="screenshot_detection"
+            android:title="@string/screenshot_detection_title"
+            android:summary="@string/screenshot_detection_summary"
+            android:defaultValue="true" />
     </PreferenceCategory>
 </PreferenceScreen>
