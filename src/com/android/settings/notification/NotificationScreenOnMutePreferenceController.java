@@ -46,6 +46,6 @@ public class NotificationScreenOnMutePreferenceController extends TogglePreferen
 
     @Override
     public int getSliceHighlightMenuRes() {
-        return com.android.settings.R.string.menu_key_sound;
+        return com.android.settings.R.string.menu_key_notifications;
     }
 }

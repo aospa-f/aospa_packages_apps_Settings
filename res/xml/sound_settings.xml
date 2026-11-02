@@ -146,14 +146,6 @@
             android:ringtoneType="notification"
             android:order="-70"/>
 
-        <!-- Smart Screen-On Notification Muting -->
-        <SwitchPreferenceCompat
-            android:key="notification_screen_on_mute"
-            android:title="@string/notification_screen_on_mute_title"
-            android:summary="@string/notification_screen_on_mute_summary"
-            android:order="-69"
-            settings:controller="com.android.settings.notification.NotificationScreenOnMutePreferenceController"/>
-
         <!-- Default alarm ringtone -->
         <com.android.settings.DefaultRingtonePreference
             android:key="alarm_ringtone"

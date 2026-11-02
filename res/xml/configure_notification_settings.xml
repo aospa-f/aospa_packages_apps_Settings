@@ -150,6 +150,14 @@
             android:title="@string/notification_polite_title"
             settings:controller="com.android.settings.notification.PoliteNotificationsPreferenceController" />
 
+        <!-- Smart Screen-On Notification Muting -->
+        <SwitchPreferenceCompat
+            android:key="notification_screen_on_mute"
+            android:order="19"
+            android:title="@string/notification_screen_on_mute_title"
+            android:summary="@string/notification_screen_on_mute_summary"
+            settings:controller="com.android.settings.notification.NotificationScreenOnMutePreferenceController"/>
+
         <SwitchPreferenceCompat
             android:key="lock_screen_notif_minimalism"
             android:order="20"
