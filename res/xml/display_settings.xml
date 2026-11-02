@@ -253,14 +253,6 @@
             android:title="@string/display_vr_pref_title"
             android:fragment="com.android.settings.display.VrDisplayPreferencePicker"/>
 
-        <!-- Network traffic monitor -->
-        <Preference
-            android:key="network_traffic_mode"
-            android:icon="@drawable/ic_settings_network_traffic"
-            android:title="@string/network_traffic_settings_title"
-            android:summary="@string/network_traffic_settings_summary"
-            android:fragment="com.android.settings.custom.networktraffic.NetworkTrafficSettings" />
-
         <!-- Double-tap to sleep -->
         <SwitchPreferenceCompat
             android:key="double_tap_sleep_gesture"
