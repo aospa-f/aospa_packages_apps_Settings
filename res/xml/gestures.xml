@@ -113,4 +113,15 @@
         android:fragment="co.aospa.settings.gestures.OffscreenGestureSettings"
         settings:controller="co.aospa.settings.gestures.OffscreenGestureSettingsController" />
 
+    <Preference
+        android:key="ax_edge_volume_gestures"
+        android:title="@string/ax_edge_volume_gestures_title"
+        android:summary="@string/ax_edge_volume_gestures_summary"
+        android:fragment="com.android.settings.gestures.AxEdgeVolumeGestureSettings" />
+
+    <Preference
+        android:key="ax_edge_panel_gestures"
+        android:title="@string/ax_edge_panel_gestures_title"
+        android:summary="@string/ax_edge_panel_gestures_summary"
+        android:fragment="com.android.settings.gestures.AxEdgePanelGestureSettings" />
 </PreferenceScreen>

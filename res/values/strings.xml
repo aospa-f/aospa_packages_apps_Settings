@@ -15807,4 +15807,19 @@
     <!-- Search keywords for Human interface device access setting -->
     <string name="keywords_access_hid">hid, human, access, device</string>
     <!-- Access HID end -->
+
+    <string name="ax_edge_volume_gestures_title">Edge volume gestures</string>
+    <string name="ax_edge_volume_gestures_summary">Slide up or down on either screen edge to adjust volume</string>
+    <string name="ax_edge_volume_enabled_title">Enable edge volume gestures</string>
+    <string name="ax_edge_volume_enabled_summary">Use a vertical slide on either edge to change media volume</string>
+    <string name="ax_edge_panel_gestures_title">Notification &amp; Quick Settings gestures</string>
+    <string name="ax_edge_panel_gestures_summary">Swipe down at the top edge: left for notifications, right for Quick Settings</string>
+    <string name="ax_edge_panel_enabled_title">Enable edge panel gestures</string>
+    <string name="ax_edge_panel_enabled_summary">Swipe down at the top edge to open notifications or Quick Settings</string>
+    <string name="ax_edge_blocked_apps_title">Blocked apps</string>
+    <string name="ax_edge_blocked_apps_none">No apps blocked</string>
+    <plurals name="ax_edge_blocked_apps_count">
+        <item quantity="one">%1$d app blocked</item>
+        <item quantity="other">%1$d apps blocked</item>
+    </plurals>
 </resources>
