@@ -27,6 +27,23 @@
     </PreferenceCategory>
 
     <PreferenceCategory
+        android:order="-135"
+        android:key="top_level_device_manager_category"
+        android:layout="@layout/settingslib_expressive_untitled_preference_category">
+        <com.android.settings.widget.HomepagePreference
+            android:icon="@drawable/ic_device_manager"
+            android:key="top_level_device_manager"
+            android:order="-10"
+            android:title="@string/device_manager_title"
+            android:summary="@string/device_manager_summary">
+            <intent
+                android:action="com.android.axion.axionparts.action.PERFORMANCE"
+                android:targetPackage="com.android.axion.axionparts"
+                android:targetClass="com.android.axion.axionparts.DeviceManagerActivity" />
+        </com.android.settings.widget.HomepagePreference>
+    </PreferenceCategory>
+
+    <PreferenceCategory
         android:order="-130"
         android:key="top_level_connectivity_category"
         android:layout="@layout/settingslib_expressive_untitled_preference_category">
@@ -120,23 +137,6 @@
             android:summary="@string/wallpaper_dashboard_summary"
             settings:highlightableMenuKey="@string/menu_key_wallpaper"
             settings:controller="com.android.settings.display.TopLevelWallpaperPreferenceController"/>
-    </PreferenceCategory>
-
-    <PreferenceCategory
-        android:order="-135"
-        android:key="top_level_device_manager_category"
-        android:layout="@layout/settingslib_expressive_untitled_preference_category">
-        <com.android.settings.widget.HomepagePreference
-            android:icon="@drawable/ic_device_manager"
-            android:key="top_level_device_manager"
-            android:order="-10"
-            android:title="@string/device_manager_title"
-            android:summary="@string/device_manager_summary">
-            <intent
-                android:action="com.android.axion.axionparts.action.PERFORMANCE"
-                android:targetPackage="com.android.axion.axionparts"
-                android:targetClass="com.android.axion.axionparts.DeviceManagerActivity" />
-        </com.android.settings.widget.HomepagePreference>
     </PreferenceCategory>
 
     <PreferenceCategory
