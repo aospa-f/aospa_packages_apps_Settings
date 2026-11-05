@@ -106,7 +106,7 @@ class HdrBrightnessApiScreen :
     }
 
     private fun Context.isHdrBrightnessEnabled(): Boolean =
-        Settings.Secure.getInt(contentResolver, Settings.Secure.HDR_BRIGHTNESS_ENABLED, ON) == ON
+        Settings.Secure.getInt(contentResolver, Settings.Secure.HDR_BRIGHTNESS_ENABLED, OFF) == ON
 
     private fun Context.getHdrBrightnessBoostLevel(): Float =
         Settings.Secure.getFloat(contentResolver, Settings.Secure.HDR_BRIGHTNESS_BOOST_LEVEL, 1.0f)

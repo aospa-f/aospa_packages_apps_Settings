@@ -35,7 +35,7 @@ public class HdrBrightnessPreferenceController extends TogglePreferenceControlle
     @Override
     public boolean isChecked() {
         return Settings.Secure.getInt(mContext.getContentResolver(),
-                HDR_BRIGHTNESS_ENABLED, /* def= */ 1) == 1;
+                HDR_BRIGHTNESS_ENABLED, /* def= */ 0) == 1;
     }
 
     @Override

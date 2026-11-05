@@ -72,7 +72,7 @@ public class HdrBrightnessLevelPreferenceController extends SliderPreferenceCont
     public final void updateState(Preference preference) {
         super.updateState(preference);
         boolean hdrBrightnessEnabled = Settings.Secure.getInt(mContext.getContentResolver(),
-                HDR_BRIGHTNESS_ENABLED, /* def= */ 1) == 1;
+                HDR_BRIGHTNESS_ENABLED, /* def= */ 0) == 1;
         preference.setEnabled(hdrBrightnessEnabled);
     }
 
