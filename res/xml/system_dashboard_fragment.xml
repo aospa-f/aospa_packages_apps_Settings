@@ -180,4 +180,16 @@
             settings:controller="com.android.settings.system.ResetPreferenceController"/>
 
     </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="duck_keybox_category"
+        android:title="@string/duck_keybox_category_title">
+
+        <Preference
+            android:key="duck_keybox_tricky_store"
+            android:title="@string/tricky_store_title"
+            android:summary="@string/tricky_store_summary"
+            android:fragment="com.android.settings.custom.spoofing.TrickyStore" />
+
+    </PreferenceCategory>
 </PreferenceScreen>
