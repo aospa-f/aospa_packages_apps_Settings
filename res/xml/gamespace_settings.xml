@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:key="gamespace_settings"
+    android:title="@string/gamespace_title">
+
+    <MultiSelectListPreference
+        android:key="ax_gamespace_apps"
+        android:title="@string/gamespace_apps_title"
+        android:summary="@string/gamespace_apps_none"
+        android:dialogTitle="@string/gamespace_apps_dialog"
+        android:persistent="false"
+        style="@style/SettingsMultiSelectListPreference" />
+
+    <PreferenceCategory android:title="@string/gamespace_features_title">
+
+        <SwitchPreference
+            android:key="ax_gamespace_lock"
+            android:title="@string/gamespace_lock_title"
+            android:summary="@string/gamespace_lock_summary"
+            android:persistent="false" />
+
+        <SwitchPreference
+            android:key="ax_gamespace_dnd"
+            android:title="@string/gamespace_dnd_title"
+            android:summary="@string/gamespace_dnd_summary"
+            android:persistent="false" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

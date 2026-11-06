@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="gamespace_title">GameSpace</string>
+    <string name="gamespace_summary">Lock gestures and the status bar, and silence interruptions while gaming</string>
+
+    <string name="gamespace_features_title">In-game features</string>
+
+    <string name="gamespace_lock_title">Lock gestures and status bar</string>
+    <string name="gamespace_lock_summary">Block the notification shade and disable edge gestures while a game is running. Tap the floating handle on the left edge to unlock or lock again.</string>
+
+    <string name="gamespace_dnd_title">Do Not Disturb in games</string>
+    <string name="gamespace_dnd_summary">Turn on Do Not Disturb automatically when a selected game starts and restore it when you leave</string>
+
+    <string name="gamespace_apps_title">Games</string>
+    <string name="gamespace_apps_dialog">Select games</string>
+    <string name="gamespace_apps_none">No games selected</string>
+    <string name="gamespace_apps_selected">%1$d apps selected</string>
+</resources>
