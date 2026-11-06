@@ -14,14 +14,11 @@
         android:summary="@string/ax_edge_volume_enabled_summary"
         android:defaultValue="true" />
 
-    <SeekBarPreference
+    <com.android.settings.widget.SeekBarPreference
         android:key="ax_edge_volume_step_dp"
         android:title="@string/ax_edge_volume_step_title"
         android:summary="@string/ax_edge_volume_step_summary"
-        android:persistent="false"
-        android:max="24"
-        android:min="4"
-        android:defaultValue="8" />
+        android:persistent="false" />
 
     <Preference
         android:key="ax_edge_volume_blocked_apps"
