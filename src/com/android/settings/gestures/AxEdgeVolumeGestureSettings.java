@@ -16,10 +16,32 @@
 
 package com.android.settings.gestures;
 
+import android.os.Bundle;
+import android.provider.Settings;
+
+import androidx.preference.SeekBarPreference;
+
 import com.android.settings.R;
 
 /** Settings page for the edge volume gestures. */
 public class AxEdgeVolumeGestureSettings extends AxEdgeGestureSettingsBase {
+
+    private static final String STEP_KEY = "ax_edge_volume_step_dp";
+    private static final int STEP_DEFAULT = 8;
+
+    @Override
+    public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
+        super.onCreatePreferences(savedInstanceState, rootKey);
+        SeekBarPreference step = findPreference(STEP_KEY);
+        if (step != null) {
+            int value = Settings.Secure.getInt(getContentResolver(), STEP_KEY, STEP_DEFAULT);
+            step.setValue(Math.max(4, Math.min(24, value)));
+            step.setOnPreferenceChangeListener((preference, newValue) -> {
+                Settings.Secure.putInt(getContentResolver(), STEP_KEY, (Integer) newValue);
+                return true;
+            });
+        }
+    }
 
     @Override
     protected int getPreferenceXml() {

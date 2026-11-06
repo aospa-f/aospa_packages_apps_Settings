@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ax_edge_volume_step_title">Volume per swipe</string>
+    <string name="ax_edge_volume_step_summary">Lower values change the volume faster per swipe</string>
+</resources>
