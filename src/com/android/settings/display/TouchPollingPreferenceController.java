@@ -28,7 +28,7 @@ public class TouchPollingPreferenceController extends TogglePreferenceController
     // Settings can only set the debug.* property, so we need to persist it
     // in system settings. Match the stock setting name for backup compatibility.
     private static final String SETTINGS_KEY = "touch_polling_enabled";
-    private static final String PROP_NAME = "debug.touch_polling_mode";
+    private static final String PROP_NAME = "persist.touch_polling_mode";
 
     public TouchPollingPreferenceController(Context context, String preferenceKey) {
         super(context, preferenceKey);
