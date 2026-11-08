@@ -19,16 +19,19 @@ package com.android.settings.display;
 import android.content.Context;
 import android.os.SystemProperties;
 import android.provider.Settings;
+import android.util.Log;
 
 import com.android.settings.core.TogglePreferenceController;
 import com.android.settings.R;
 
 public class TouchPollingPreferenceController extends TogglePreferenceController {
 
+    private static final String TAG = "TouchPollingPref";
+
     // Settings can only set the debug.* property, so we need to persist it
     // in system settings. Match the stock setting name for backup compatibility.
     private static final String SETTINGS_KEY = "touch_polling_enabled";
-    private static final String PROP_NAME = "persist.touch_polling_mode";
+    private static final String PROP_NAME = "debug.touch_polling_mode";
 
     public TouchPollingPreferenceController(Context context, String preferenceKey) {
         super(context, preferenceKey);
@@ -44,14 +47,25 @@ public class TouchPollingPreferenceController extends TogglePreferenceController
     @Override
     public boolean setChecked(boolean value) {
         Settings.Secure.putInt(mContext.getContentResolver(), SETTINGS_KEY, value ? 1 : 0);
-        SystemProperties.set(PROP_NAME, value ? "1" : "0");
+        try {
+            SystemProperties.set(PROP_NAME, value ? "1" : "0");
+        } catch (Exception e) {
+            Log.w(TAG, "Failed to set property " + PROP_NAME + ": " + e.getMessage());
+        }
         return true;
     }
 
     @Override
     public boolean isChecked() {
-        // debug prop isn't persistent
-        return Settings.Secure.getInt(mContext.getContentResolver(), SETTINGS_KEY, 0) == 1;
+        boolean enabled = Settings.Secure.getInt(mContext.getContentResolver(), SETTINGS_KEY, 0) == 1;
+        try {
+            String prop = SystemProperties.get(PROP_NAME, "");
+            if (prop.isEmpty()) {
+                SystemProperties.set(PROP_NAME, enabled ? "1" : "0");
+            }
+        } catch (Exception ignored) {
+        }
+        return enabled;
     }
 
     @Override
