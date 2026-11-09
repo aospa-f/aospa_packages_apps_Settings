@@ -15822,4 +15822,7 @@
         <item quantity="one">%1$d app blocked</item>
         <item quantity="other">%1$d apps blocked</item>
     </plurals>
+    <!-- Vibrate on screen unlock -->
+    <string name="vibrate_on_screen_unlock_title">Vibrate on screen unlock</string>
+    <string name="vibrate_on_screen_unlock_summary">Vibrate when successfully unlocking with pattern or fingerprint. Authentication errors will always vibrate.</string>
 </resources>

@@ -119,6 +119,13 @@
             android:summary="@string/search_gesture_feature_summary"
             android:icon="@drawable/ic_gesture_24px"
             settings:controller="com.android.settings.gestures.NavigationSettingsContextualSearchController" />
+
+        <SwitchPreferenceCompat
+            android:key="vibrate_on_screen_unlock"
+            android:title="@string/vibrate_on_screen_unlock_title"
+            android:summary="@string/vibrate_on_screen_unlock_summary"
+            android:icon="@drawable/ic_vibration"
+            settings:controller="com.android.settings.system.VibrateOnScreenUnlockPreferenceController" />
     </PreferenceCategory>
 
     <PreferenceCategory
